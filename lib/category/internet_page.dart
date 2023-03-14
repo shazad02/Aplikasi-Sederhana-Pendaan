@@ -48,14 +48,12 @@ class InterBody extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(40.0),
-            child: Container(
-              child: Center(
-                child: Text(
-                  'Mohon Maaf Fitur Masih Dalam Pengembangan',
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),
+            child: Center(
+              child: Text(
+                'Mohon Maaf Fitur Masih Dalam Pengembangan',
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 16,
                 ),
               ),
             ),

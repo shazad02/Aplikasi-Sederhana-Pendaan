@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pembayaranklp2/card/news_card.dart';
 import 'package:pembayaranklp2/card/news_card2.dart';
 
 class PopuPage extends StatefulWidget {

@@ -48,14 +48,12 @@ class RiwayatBody extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(40.0),
-            child: Container(
-              child: Center(
-                child: Text(
-                  'Kamu Tidak Memiliki History, Ayo Mulai Transaksi dan nikmati manfaatnya',
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),
+            child: Center(
+              child: Text(
+                'Kamu Tidak Memiliki History, Ayo Mulai Transaksi dan nikmati manfaatnya',
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 16,
                 ),
               ),
             ),

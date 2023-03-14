@@ -29,7 +29,7 @@ class ProfliePage extends StatelessWidget {
           backgroundColor: Color.fromARGB(255, 205, 45, 45),
           actions: <Widget>[
             IconButton(
-              icon: new Icon(
+              icon: const Icon(
                 Icons.notifications,
                 color: Colors.white,
               ),
@@ -41,91 +41,89 @@ class ProfliePage extends StatelessWidget {
             ),
           ]),
       body: SafeArea(
-        child: Container(
+        child: SizedBox(
           width: double.infinity,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Container(
-                  child: Row(
-                    children: [
-                      ClipOval(
-                        child: Lottie.asset(
-                          "assets/anim/prof.json",
-                          width: 120,
-                          height: 120,
-                        ),
+                child: Row(
+                  children: [
+                    ClipOval(
+                      child: Lottie.asset(
+                        "assets/anim/prof.json",
+                        width: 120,
+                        height: 120,
                       ),
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 4 / 100,
-                      ),
-                      Expanded(
-                        child: Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: Color.fromARGB(19, 255, 250, 251),
-                              borderRadius: BorderRadius.circular(13)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "Liyanni",
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 4 / 100,
+                    ),
+                    Expanded(
+                      child: Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(19, 255, 250, 251),
+                            borderRadius: BorderRadius.circular(13)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Liyanni",
+                                style: TextStyle(
+                                    color: Color.fromARGB(219, 255, 255, 255),
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.w100),
+                              ),
+                              SizedBox(
+                                height: MediaQuery.of(context).size.height *
+                                    2 /
+                                    100,
+                              ),
+                              Text('0899292993',
                                   style: TextStyle(
-                                      color: Color.fromARGB(219, 255, 255, 255),
-                                      fontSize: 25,
-                                      fontWeight: FontWeight.w100),
-                                ),
-                                SizedBox(
-                                  height: MediaQuery.of(context).size.height *
-                                      2 /
-                                      100,
-                                ),
-                                Text('0899292993',
+                                    color: Color.fromARGB(219, 255, 255, 255),
+                                    fontSize: 15,
+                                  )),
+                              SizedBox(
+                                height: MediaQuery.of(context).size.height *
+                                    2 /
+                                    100,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    'Saldo',
                                     style: TextStyle(
-                                      color: Color.fromARGB(219, 255, 255, 255),
-                                      fontSize: 15,
-                                    )),
-                                SizedBox(
-                                  height: MediaQuery.of(context).size.height *
-                                      2 /
-                                      100,
-                                ),
-                                Row(
-                                  children: [
-                                    Text(
-                                      'Saldo',
-                                      style: TextStyle(
-                                          color: Color.fromARGB(
-                                              219, 255, 255, 255),
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    SizedBox(
-                                      width: MediaQuery.of(context).size.width *
-                                          1 /
-                                          100,
-                                    ),
-                                    Text(
-                                      'Rp. 500.000,00',
-                                      style: TextStyle(
-                                          color: Color.fromARGB(
-                                              219, 255, 255, 255),
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ],
-                                )
-                              ],
-                            ),
+                                        color:
+                                            Color.fromARGB(219, 255, 255, 255),
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width *
+                                        1 /
+                                        100,
+                                  ),
+                                  Text(
+                                    'Rp. 500.000,00',
+                                    style: TextStyle(
+                                        color:
+                                            Color.fromARGB(219, 255, 255, 255),
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              )
+                            ],
                           ),
                         ),
-                      )
-                    ],
-                  ),
+                      ),
+                    )
+                  ],
                 ),
               ),
               SizedBox(
@@ -172,7 +170,7 @@ class ProfliePage extends StatelessWidget {
                                           Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Uang Masuk',
                                                 style: TextStyle(
@@ -217,7 +215,7 @@ class ProfliePage extends StatelessWidget {
                                           Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Uang Masuk',
                                                 style: TextStyle(
