@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_launcher_icons/xml_templates.dart';
 import 'package:lottie/lottie.dart';
-import 'package:pembayaranklp2/items/category_item.dart';
 import 'package:pembayaranklp2/items/category_item2.dart';
 import 'package:pembayaranklp2/profile/acc_page.dart';
 import 'package:pembayaranklp2/profile/code_page.dart';
@@ -262,7 +260,7 @@ class ProfliePage extends StatelessWidget {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
+                            children: const [
                               Text(
                                 "Pengaturan Akun",
                                 style: TextStyle(

@@ -50,7 +50,7 @@ class _RegisScreenState extends State<RegisScreen> {
     TextEditingController password = TextEditingController();
     TextEditingController password1 = TextEditingController();
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 236, 32, 40),
+      backgroundColor: const Color.fromARGB(255, 236, 32, 40),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -69,7 +69,7 @@ class _RegisScreenState extends State<RegisScreen> {
                     'Registrasi',
                     style: robotoMedium.copyWith(
                         fontSize: Dimensions.FONT_SIZE_OVER_LARGE,
-                        color: Color.fromARGB(255, 39, 35, 35),
+                        color: const Color.fromARGB(255, 39, 35, 35),
                         fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
@@ -97,7 +97,7 @@ class _RegisScreenState extends State<RegisScreen> {
                     onPressed: () {
                       takeImage(context);
                     },
-                    icon: Icon(Icons.camera_alt),
+                    icon: const Icon(Icons.camera_alt),
                     color: Colors.white,
                     iconSize: 40,
                   ),
@@ -121,7 +121,7 @@ class _RegisScreenState extends State<RegisScreen> {
                         ),
                         decoration: InputDecoration(
                           prefixIcon: const Icon(Icons.person),
-                          fillColor: Color.fromARGB(255, 246, 252, 255),
+                          fillColor: const Color.fromARGB(255, 246, 252, 255),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(25),
@@ -156,7 +156,7 @@ class _RegisScreenState extends State<RegisScreen> {
                           prefixIcon: const Icon(
                             Icons.phone,
                           ),
-                          fillColor: Color.fromARGB(255, 246, 252, 255),
+                          fillColor: const Color.fromARGB(255, 246, 252, 255),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(25),
@@ -191,7 +191,7 @@ class _RegisScreenState extends State<RegisScreen> {
                           prefixIcon: const Icon(
                             Icons.lock,
                           ),
-                          fillColor: Color.fromARGB(255, 246, 252, 255),
+                          fillColor: const Color.fromARGB(255, 246, 252, 255),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(25),
@@ -278,7 +278,7 @@ class _RegisScreenState extends State<RegisScreen> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         'Jenis Kelamin',
                         style: TextStyle(
@@ -293,13 +293,13 @@ class _RegisScreenState extends State<RegisScreen> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 246, 252, 255),
+                        color: const Color.fromARGB(255, 246, 252, 255),
                         borderRadius: BorderRadius.circular(25)),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         RadioListTile(
-                          title: Text("Male"),
+                          title: const Text("Male"),
                           value: "male",
                           activeColor: Colors.black,
                           groupValue: gender,
@@ -310,7 +310,7 @@ class _RegisScreenState extends State<RegisScreen> {
                           },
                         ),
                         RadioListTile(
-                          title: Text("Female"),
+                          title: const Text("Female"),
                           activeColor: Colors.black,
                           value: "female",
                           groupValue: gender,
@@ -334,11 +334,12 @@ class _RegisScreenState extends State<RegisScreen> {
                         decoration: BoxDecoration(
                             color: const Color(0x0ffd7d7d),
                             border: Border.all(
-                                color: Color.fromARGB(255, 0, 0, 0), width: 2),
+                                color: const Color.fromARGB(255, 0, 0, 0),
+                                width: 2),
                             borderRadius: BorderRadius.circular(5)),
                         child: Checkbox(
                           value: _isChecked,
-                          checkColor: Color.fromARGB(255, 0, 0, 0),
+                          checkColor: const Color.fromARGB(255, 0, 0, 0),
                           onChanged: (value) {
                             setState(() {
                               _isChecked = value!;
@@ -349,32 +350,30 @@ class _RegisScreenState extends State<RegisScreen> {
                       SizedBox(
                         width: MediaQuery.of(context).size.height * 1 / 100,
                       ),
-                      Container(
-                        child: RichText(
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          text: const TextSpan(
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Colors.black,
-                            ),
-                            children: <TextSpan>[
-                              TextSpan(text: 'Saya menyetujui '),
-                              TextSpan(
-                                  text: 'Syarat',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                              TextSpan(text: ' dan '),
-                              TextSpan(
-                                  text: 'Ketentuan',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                            ],
+                      RichText(
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        text: const TextSpan(
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
                           ),
+                          children: <TextSpan>[
+                            TextSpan(text: 'Saya menyetujui '),
+                            TextSpan(
+                                text: 'Syarat',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            TextSpan(text: ' dan '),
+                            TextSpan(
+                                text: 'Ketentuan',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ],
                         ),
                       ),
                     ],
@@ -384,7 +383,7 @@ class _RegisScreenState extends State<RegisScreen> {
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                      backgroundColor: const Color.fromARGB(255, 0, 0, 0),
                       minimumSize: const Size(double.infinity, 42),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),

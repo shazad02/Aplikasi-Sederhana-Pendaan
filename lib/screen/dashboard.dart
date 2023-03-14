@@ -80,7 +80,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           children: [
             Stack(
               children: [
-                Container(
+                SizedBox(
                   width: double.infinity,
                   height: 110,
                 ),

@@ -40,7 +40,7 @@ class _PopuPageState extends State<PopuPage> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+            children: const [
               SizedBox(
                 height: 20,
               ),

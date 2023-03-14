@@ -21,22 +21,23 @@ class CovidCard extends StatelessWidget {
             return GestureDetector(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return CodePage();
+                  return const CodePage();
                 }));
               },
               child: Container(
-                margin: EdgeInsets.only(right: 12),
+                margin: const EdgeInsets.only(right: 12),
                 width: 248,
                 height: 180,
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                        color: Color.fromARGB(255, 63, 60, 60).withOpacity(0.5),
+                        color: const Color.fromARGB(255, 63, 60, 60)
+                            .withOpacity(0.5),
                         blurRadius: 0.5,
-                        offset: Offset(0, 3))
+                        offset: const Offset(0, 3))
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.all(
+                  borderRadius: const BorderRadius.all(
                     Radius.circular(4),
                   ),
                 ),
@@ -49,15 +50,15 @@ class CovidCard extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                     Container(
-                      margin: EdgeInsets.all(12),
+                      margin: const EdgeInsets.all(12),
                       width: double.infinity,
                       height: 40,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Text(
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         covidModel[index].text,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xff1E272E),
                           fontSize: 16,
                           fontWeight: FontWeight.w500,

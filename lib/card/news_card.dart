@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pembayaranklp2/profile/code_page.dart';
-import 'package:pembayaranklp2/screen/regis.dart';
 
 import '../../models/news_card_model.dart';
 
@@ -14,7 +13,7 @@ class NewsCard extends StatelessWidget {
     return SizedBox(
       height: 130,
       child: ListView.builder(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           itemCount: newCardModel.length,
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,
@@ -23,13 +22,13 @@ class NewsCard extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return CodePage();
+                    return const CodePage();
                   }));
                 },
                 child: Container(
-                  margin: EdgeInsets.only(left: 20),
-                  padding:
-                      EdgeInsets.only(left: 12, right: 2, top: 9, bottom: 9),
+                  margin: const EdgeInsets.only(left: 20),
+                  padding: const EdgeInsets.only(
+                      left: 12, right: 2, top: 9, bottom: 9),
                   width: 248,
                   height: 100,
                   decoration: BoxDecoration(
@@ -39,7 +38,7 @@ class NewsCard extends StatelessWidget {
                         newCardModel[index].color2,
                       ],
                     ),
-                    borderRadius: BorderRadius.all(
+                    borderRadius: const BorderRadius.all(
                       Radius.circular(8),
                     ),
                   ),
@@ -49,37 +48,35 @@ class NewsCard extends StatelessWidget {
                         newCardModel[index].images,
                         width: 81,
                       ),
-                      SizedBox(),
+                      const SizedBox(),
                       Expanded(
-                        child: Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                newCardModel[index].Title,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                  color: Colors.white,
-                                ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              newCardModel[index].Title,
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                color: Colors.white,
                               ),
-                              SizedBox(
-                                height: 4,
+                            ),
+                            const SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              newCardModel[index].text,
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
                               ),
-                              Text(
-                                newCardModel[index].text,
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.white,
-                                ),
-                              )
-                            ],
-                          ),
+                            )
+                          ],
                         ),
                       )
                     ],

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pembayaranklp2/category/hiburan_page.dart';
-import 'package:pembayaranklp2/category/internet_page.dart';
 import 'package:pembayaranklp2/category/profile_page.dart';
 import 'package:pembayaranklp2/category/riwayat_page.dart';
 
-import 'package:pembayaranklp2/category/tiket_page.dart';
 import 'package:pembayaranklp2/screen/dashboard.dart';
 
 class NavigationPage extends StatefulWidget {

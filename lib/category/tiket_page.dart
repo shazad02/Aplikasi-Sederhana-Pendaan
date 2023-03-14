@@ -48,14 +48,12 @@ class TiketBody extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(40.0),
-            child: Container(
-              child: Center(
-                child: Text(
-                  'Mohon Maaf Fitur belum bisa di gunakan',
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),
+            child: Center(
+              child: Text(
+                'Mohon Maaf Fitur belum bisa di gunakan',
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 16,
                 ),
               ),
             ),

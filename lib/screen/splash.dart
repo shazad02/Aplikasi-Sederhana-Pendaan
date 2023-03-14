@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Timer(duration, () {
       Navigator.of(context)
           .pushReplacement(MaterialPageRoute(builder: (context) {
-        return LoginnScreen();
+        return const LoginnScreen();
       }));
     });
   }
@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 236, 32, 40),
+      backgroundColor: const Color.fromARGB(255, 236, 32, 40),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(Dimensions.PADDING_SIZE_LARGE),
