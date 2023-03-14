@@ -19,6 +19,7 @@ class LoginnScreen extends StatelessWidget {
           child: Container(
             margin: const EdgeInsets.symmetric(
               horizontal: 20,
+              
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
